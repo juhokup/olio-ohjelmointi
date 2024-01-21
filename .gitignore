@@ -1,8 +1,4 @@
 misc/
 
-vk1teht1/build/
-vk1teht1/*.user
-vk1teht2/build/
-vk1teht2/*.user
-vk1teht3/build/
-vk1teht3/*.user
+*/build/
+*/*.user

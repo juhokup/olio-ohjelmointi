@@ -1,0 +1,62 @@
+/*
+Viikko 2
+Sivu 1.
+Toteuta viikkotehtävän 1 mukainen arvauspeli nyt olio-ohjelmointia käyttäen.
+Tee alla olevan kuvan mukainen luokka Game,
+missä luokan konstruktorissa annetaan maksimi luku,
+mille välille 1-maxNumber peli arpoo arvattavan luvun.
+
+------------------------+
+Game.cpp:               |
+-maxNumber:int          |
+-playerGuess:int        |
+-randomNumber:int       |
+-numOfGuesses:int       |
+------------------------+
++Game(int):             |
++~Game()                |
++play():void            |
+-printGameResult():void |
+------------------------+
+
+
+
+Sivu 2.
+Pelin tulee toimia alla olevan kuvan mukaisesti.
+Eli main.cpp tiedostoon vain esitetyt komennot:
+
+------------------------+
+#include "Game.h"       |
+                        |
+int main() {            |
+    Game arvauspeli(10);|
+    arvauspeli.play();  |
+    return 0;           |
+}                       |
+------------------------+
+
+ja pelin tulee tulostaa alla olevassa kuvassa
+komentoikkunassa näkyvät tekstit eli:
+
+1. Luokan konstruktori tulostaa maksimiarvon jonka käyttäjä antoi
+
+2. Play metodi tulostaa peliä pelattaessa mille välille arvaus pitää antaa sekä arvauksen jälkeen osuiko vaiko eikö.
+
+3. printGameResult metodi tulostaa yhteenvedon eli mikä oli oikea vastaus ja kuinka monta arvausta siihen tarviitiin
+(vihje: play metodin täytyy kutsua printGameResult metodia)
+
+4. Ja lopuksi, kun Game objekti tuhotaan tulostuu destruktorin viesti.
+
+cmd-------------------------------------------------------------+
+GAME CONSTRUCTOR: object initialized with 10 as a maximum value |
+Give your guess between 1-10                                    |
+1                                                               |
+Your guess is too small                                         |
+9                                                               |
+Your guess is too big                                           |
+5                                                               |
+Your guess is right = 5                                         |
+"You guessed the right answer = 5 with 3 guesses                |
+GAME DESTRUCTOR: object cleared from stack memory               |
+----------------------------------------------------------------+
+*/

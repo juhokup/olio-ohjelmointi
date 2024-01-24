@@ -2,7 +2,7 @@
 
 int main() {
 
-    Game gameObject(10);
+    Game gameObject;
     gameObject.play();
     return 0;
 }

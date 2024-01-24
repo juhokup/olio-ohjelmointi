@@ -11,7 +11,7 @@ private:
     void printGameResult();
 
 public:
-    Game(int number);
+    Game();
     ~Game();
     void play();
 };

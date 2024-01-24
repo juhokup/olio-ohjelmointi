@@ -4,15 +4,9 @@
 #include <iostream>
 using namespace std;
 
-Game::Game() : numOfGuesses(0) //alustetaan numOfGuesses suorituksen alussa nollaan
+Game::Game(int number) : numOfGuesses(0) //alustetaan numOfGuesses suorituksen alussa nollaan, tämän voi tehdä myös jo game.h tiedostossa
 {
-  //ohjeissa ei ollut maxNumber kysyntää tulostettuna näytölle,
-  //joten ajattelin lisätä sen selkeyden vuoksi
-  //loppukäyttäjää ajatellen
-  //***************************************
-  cout << "Welcome to The Number Guessing Game!" << endl << "Enter a maximum value for the guess: " << endl;
-  //***************************************
-  cin >> maxNumber;
+  maxNumber = number;
   cout << "GAME CONSTRUCTOR: object initialized with " << maxNumber << " as a maximum value" << endl;
 
   srand(time(0));                           //arvotaan numero ajan perusteella
@@ -40,7 +34,7 @@ void Game::play() //pelin suoritus
     if (playerGuess < 1 || playerGuess > maxNumber) {
       cout << "Invalid guess. Your guess is outside of number range 1-"
            << maxNumber << endl;
-      continue; //palataan do-silmukan alkuun (rivi 29)
+      continue; //palataan do-silmukan alkuun
     }
     //***************************************
 

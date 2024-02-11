@@ -1,5 +1,3 @@
-//asunto.cpp
-
 #include "Asunto.h"
 
 Asunto::Asunto(){

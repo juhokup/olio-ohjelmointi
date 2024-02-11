@@ -2,6 +2,10 @@
 
 Kerrostalo::Kerrostalo() {
     cout <<endl<< "*****************Kerrostalo luotu***********************"<<endl<<endl;
+
+    //Alustetaan jäsenmuuttujat osoittamaan uusiin
+    //Katutaso ja Kerros-olioiden ilmentymiin,
+    //jotka on luotu dynaamisesti muistista new-avainsanan avulla.
     eka = new Katutaso;
     toka = new Kerros;
     kolmas = new Kerros;
@@ -12,6 +16,8 @@ Kerrostalo::Kerrostalo() {
 Kerrostalo::~Kerrostalo()
 {
     //cout <<endl<< "*****************Kerrostalo destructor***********************"<<endl;
+
+    //poistetaan osoittimien dynaamisesti varaamat muistit
     delete eka;
     delete toka;
     delete kolmas;

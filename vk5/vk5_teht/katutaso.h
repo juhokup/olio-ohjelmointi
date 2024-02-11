@@ -1,5 +1,3 @@
-//katutaso.h
-
 #ifndef KATUTASO_H
 #define KATUTASO_H
 #include <iostream>

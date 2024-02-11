@@ -13,11 +13,20 @@
 
 int main() {
 
+    //luodaan Kerrostalo oliolle osoitin
     Kerrostalo * pointerKerrostalo;
+
+    //Varataan Kerrostalo oliolle muistia heap-muistialueelta
     pointerKerrostalo = new Kerrostalo;
+
+    //kutsutaan funktiota johon luotu pointteri osoittaa
     pointerKerrostalo->maaritellaanAsunnot();
 
+    //poistetaan Kerrostalo olio heap-muistista
     delete pointerKerrostalo;
+
+    //Asetetaan pointerKerrostalo nulliksi
+    //jolloin se ei enää osoita mihinkään muistiin
     pointerKerrostalo=nullptr;
 
     return 0;

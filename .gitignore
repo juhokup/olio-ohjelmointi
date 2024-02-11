@@ -2,4 +2,7 @@ misc/
 
 */build/
 */*.user
-*/*/*.user
+vk4/*/*.user
+vk5/*/*.user
+vk6/*/*.user
+vk7/*/*.user

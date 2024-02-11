@@ -6,3 +6,8 @@ vk4/*/*.user
 vk5/*/*.user
 vk6/*/*.user
 vk7/*/*.user
+
+vk4/*/build/
+vk5/*/build/
+vk6/*/build/
+vk7/*/build/
